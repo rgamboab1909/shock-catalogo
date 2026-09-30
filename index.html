@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SHOCK · Catálogo oficial Vol. 01</title>
+<meta name="description" content="Accesorios modulares hechos a mano. 44 piezas: shocks, aretes, collares, pulseras, imperdibles y accesorios.">
+<meta property="og:title" content="SHOCK · Catálogo oficial Vol. 01">
+<meta property="og:description" content="Accesorios modulares hechos a mano. Nada que no cambie.">
+<meta property="og:image" content="img/brand/og.jpg">
+<meta name="theme-color" content="#6558C0">
+<link rel="icon" href="img/brand/icon.png">
+<link rel="apple-touch-icon" href="img/brand/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&display=swap">
+<style>
+:root{--lime:#B7F64D;--violet:#6558C0;--ink:#0B0B0C;--white:#fff;--r:22px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--ink);color:var(--white);font-family:"Inter Tight",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+/* top bar */
+.bar{position:sticky;top:0;z-index:20;background:rgba(11,11,12,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.bar-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
+.bar-in img{height:22px;width:auto}
+.search{flex:1;max-width:260px;display:flex}
+.search input{width:100%;font:600 15px/1 "Inter Tight",sans-serif;padding:11px 14px;border-radius:999px;border:1.5px solid #3a3a42;background:#16161a;color:#fff;outline:none}
+.search input:focus{border-color:var(--lime)}
+.search input::placeholder{color:#9d9da8}
+nav.cats{display:flex;gap:8px;overflow-x:auto;padding:0 16px 12px;max-width:1200px;margin:0 auto;scrollbar-width:none}
+nav.cats::-webkit-scrollbar{display:none}
+nav.cats a{flex:none;text-decoration:none;font-weight:800;font-size:15px;padding:10px 16px;border-radius:999px;background:#1d1d22;color:#fff;min-height:40px;display:flex;align-items:center}
+nav.cats a.on{background:var(--lime);color:var(--ink)}
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--violet);min-height:min(100svh,920px);display:flex;flex-direction:column;padding:28px 20px 32px}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero > *:not(.hero-bg){position:relative}
+.hero-top{display:flex;justify-content:space-between;font-weight:800;font-size:13px;letter-spacing:.14em}
+.hero-word{width:min(100%,760px);margin:22px auto 0}
+.ringpic{position:relative;width:min(78vw,480px);aspect-ratio:1;margin:20px auto 0}
+.ringpic .pic{position:absolute;inset:12%;border-radius:50%;overflow:hidden}
+.ringpic .pic img{width:100%;height:100%;object-fit:cover}
+.ringpic .rg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-12deg)}
+.tag{position:absolute;font-weight:800;font-size:14px;letter-spacing:.06em;padding:8px 14px;border-radius:999px}
+.tag.a{left:-4%;top:12%;background:var(--lime);color:var(--ink);transform:rotate(-6deg)}
+.tag.b{right:-4%;bottom:12%;background:var(--ink);color:var(--lime);transform:rotate(5deg)}
+.hero-foot{margin-top:auto;padding-top:28px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;max-width:1200px;width:100%;margin-left:auto;margin-right:auto}
+.hero-foot h1{margin:0;font-size:clamp(40px,11vw,84px);font-weight:900;line-height:.92;letter-spacing:-.04em}
+.hero-foot h1 span{color:var(--lime)}
+.cta{flex:none;display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--white);color:var(--ink);font-weight:800;font-size:16px;padding:14px 20px;border-radius:999px;min-height:48px}
+/* intro */
+.intro{background:var(--white);color:var(--ink);padding:48px 20px}
+.wrap{max-width:1200px;margin:0 auto}
+.intro h2{margin:0;font-size:clamp(34px,8vw,68px);font-weight:900;line-height:.98;letter-spacing:-.04em;max-width:900px}
+.intro h2 mark{background:var(--lime);color:var(--ink);padding:0 .15em}
+.intro p{font-size:18px;font-weight:500;line-height:1.5;max-width:680px;color:#26262c;margin:20px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-weight:800;font-size:13px;letter-spacing:.08em;padding:9px 14px;border-radius:999px}
+.legend{margin-top:22px;font-size:15px;font-weight:600;color:#3d3d45}
+/* categories */
+.cat{background:var(--bg);color:var(--fg);padding:0 0 48px}
+.cat-head{position:relative;overflow:hidden;min-height:340px;display:flex;align-items:flex-end}
+.cat-slime{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat-ring{position:absolute;right:-60px;top:-40px;width:300px;height:300px;transform:rotate(18deg)}
+.cat-txt{position:relative;width:100%;max-width:1200px;margin:0 auto;padding:28px 20px;background:linear-gradient(transparent,rgba(0,0,0,.0))}
+.cat-n{display:block;font-size:22px;font-weight:900;color:#fff}
+.cat h2{margin:4px 0 0;font-size:clamp(52px,15vw,150px);font-weight:900;line-height:.86;letter-spacing:-.05em;color:#fff;text-shadow:0 2px 24px rgba(40,20,120,.35)}
+.cat-txt p{margin:12px 0 14px;font-size:20px;font-weight:700;color:#fff;max-width:560px;text-shadow:0 1px 14px rgba(40,20,120,.45)}
+.pill{display:inline-block;background:var(--ink);color:var(--lime);font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.grid{list-style:none;margin:0 auto;padding:24px 16px 0;max-width:1200px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+@media (min-width:720px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 22px;padding:32px 20px 0}}
+@media (min-width:1050px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card-btn{all:unset;display:flex;flex-direction:column;gap:10px;cursor:pointer;width:100%;-webkit-tap-highlight-color:transparent}
+.card-btn:focus-visible .ph{outline:3px solid var(--fg);outline-offset:3px}
+.ph{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#ddd;transition:transform .2s}
+.card-btn:active .ph{transform:scale(.97)}
+@media (hover:hover){.card-btn:hover .ph{transform:rotate(-1.2deg) scale(1.02)}}
+.ph img{width:100%;height:100%;object-fit:cover}
+.stk{position:absolute;left:10px;top:10px;background:var(--stk);color:var(--stkfg);font-weight:800;font-size:13px;letter-spacing:.06em;padding:6px 10px;border-radius:999px;transform:rotate(-5deg)}
+.dots{position:absolute;right:10px;bottom:10px;display:flex;gap:4px;background:rgba(11,11,12,.55);padding:5px 7px;border-radius:999px}
+.dots i{width:6px;height:6px;border-radius:50%;background:#fff}
+.meta{display:flex;flex-direction:column;gap:3px}
+.lab{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sub)}
+.nm{font-size:19px;font-weight:800;line-height:1.05;letter-spacing:-.02em}
+.pr{font-size:12px;font-weight:600;color:var(--sub);display:flex;flex-direction:column;gap:1px}
+.pr b{color:var(--fg);font-weight:900;font-size:16px}
+.card[hidden]{display:none}
+.empty{display:none;text-align:center;padding:60px 20px;font-weight:700;font-size:18px}
+/* footer */
+footer{background:var(--ink);padding:56px 20px 40px}
+footer h3{margin:0;font-size:clamp(38px,9vw,80px);font-weight:900;line-height:.95;letter-spacing:-.04em}
+footer h3 mark{background:var(--lime);color:var(--ink);padding:0 .12em}
+footer p{font-size:18px;font-weight:600;color:#d6d6dc;line-height:1.45}
+.ig{display:inline-flex;align-items:center;min-height:48px;text-decoration:none;background:var(--lime);color:var(--ink);font-weight:800;font-size:18px;padding:12px 22px;border-radius:999px}
+.foot-logo{width:260px;margin-top:40px}
+.small{margin-top:18px;font-size:12px;font-weight:700;letter-spacing:.1em;color:#9d9da8}
+/* modal */
+dialog{border:0;padding:0;width:min(560px,100vw);max-width:100vw;max-height:94svh;background:var(--ink);color:#fff;border-radius:26px;overflow:hidden}
+@media (max-width:600px){dialog{width:100vw;height:100svh;border-radius:0;margin:0}}
+dialog::backdrop{background:rgba(11,11,12,.8)}
+.m-imgs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;background:#000}
+.m-imgs::-webkit-scrollbar{display:none}
+.m-imgs img{flex:none;width:100%;aspect-ratio:4/5;max-height:62svh;object-fit:cover;scroll-snap-align:center}
+dialog[open]{overflow-y:auto}
+.m-dots{display:flex;justify-content:center;gap:6px;padding:12px 0 0}
+.m-dots i{width:7px;height:7px;border-radius:50%;background:#4a4a52}
+.m-dots i.on{background:var(--lime)}
+.m-body{padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px}
+.m-code{align-self:flex-start;background:var(--lime);color:var(--ink);font-weight:800;font-size:14px;letter-spacing:.06em;padding:6px 12px;border-radius:999px}
+.m-body h4{margin:4px 0 0;font-size:32px;font-weight:900;letter-spacing:-.03em;line-height:1}
+.m-cat{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#c8c8ce}
+.m-pr{font-size:16px;font-weight:600;color:#c8c8ce}
+.m-pr b{color:#fff;font-size:20px;font-weight:900;margin-right:6px}
+.m-act{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+.m-act a,.m-act button{font:800 16px/1 "Inter Tight",sans-serif;min-height:48px;padding:0 20px;border-radius:999px;border:0;cursor:pointer;display:inline-flex;align-items:center;text-decoration:none}
+.m-dm{background:var(--lime);color:var(--ink)}
+.m-copy{background:#26262c;color:#fff}
+.m-close{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(11,11,12,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.m-note{font-size:13px;color:#9d9da8;font-weight:600}
+</style>
+</head>
+<body>
+<div class="bar">
+<div class="bar-in">
+<a href="#top" aria-label="Inicio"><img src="img/brand/shock-white.png" alt="SHOCK" width="140" height="31"></a>
+<label class="search"><span class="sr" style="position:absolute;left:-9999px">Buscar pieza</span><input id="q" type="search" placeholder="Buscar: S012, cherry…" autocomplete="off"></label>
+</div>
+<nav class="cats" aria-label="Categorías"><a href="#shocks" data-nav="shocks">shocks</a><a href="#aretes" data-nav="aretes">aretes</a><a href="#collares" data-nav="collares">collares</a><a href="#pulseras" data-nav="pulseras">pulseras</a><a href="#imperdibles" data-nav="imperdibles">imperdibles</a><a href="#accesorios" data-nav="accesorios">accesorios</a></nav>
+</div>
+
+<main id="top">
+<section class="hero">
+<img class="hero-bg" src="img/brand/slime2.jpg" alt="">
+<div class="hero-top"><span>CATÁLOGO OFICIAL</span><span>VOL. 01</span></div>
+<img class="hero-word" src="img/brand/shock-white.png" alt="SHOCK">
+<div class="ringpic">
+<div class="pic"><img src="img/p/S011-1.jpg" alt="Shock neon cute"></div>
+<img class="rg" src="img/brand/ring.png" alt="">
+<span class="tag a">44 PIEZAS</span>
+<span class="tag b">HECHO A MANO</span>
+</div>
+<div class="hero-foot">
+<h1>Nada que<br>no <span>cambie.</span></h1>
+<a class="cta" href="#shocks">Ver catálogo ↓</a>
+</div>
+</section>
+
+<section class="intro">
+<div class="wrap">
+<h2>No se trata de tener más, sino de <mark>usar distinto.</mark></h2>
+<p>Cada pieza SHOCK está hecha a mano y pensada para transformarse: se engancha, se mueve, cambia de función con pequeños ajustes. Mezcla, prueba, cambia.</p>
+<div class="chips"><span style="background:#0B0B0C;color:#B7F64D">MODULAR</span><span style="background:#6558C0;color:#fff">HECHO A MANO</span><span style="background:#B7F64D;color:#0B0B0C">PIEZAS ÚNICAS</span></div>
+<div class="legend">Toca una pieza para ver todas sus fotos. Pide con el código (ej. S012). Precios: pendientes por definir.</div>
+</div>
+</section>
+
+<section id="shocks" class="cat" style="--bg:#B7F64D;--fg:#0B0B0C;--sub:#2A3510;--stk:#0B0B0C;--stkfg:#B7F64D">
+<header class="cat-head">
+<img class="cat-slime" src="img/brand/slime1.jpg" alt="" loading="lazy">
+<img class="cat-ring" src="img/brand/ring.png" alt="" loading="lazy">
+<div class="cat-txt">
+<span class="cat-n">01</span>
+<h2>SHOCKS</h2>
+<p>La pieza insignia. Argolla + charms: engánchalo donde se te ocurra.</p>
+<span class="pill">10 piezas</span>
+</div>
+</header>
+<ul class="grid"><li class="card" data-code="S008" data-search="s008 blanco puntos shock">
+<button type="button" class="card-btn" data-open="S008" aria-label="Ver blanco puntos, S008">
+<span class="ph"><img src="img/p/S008-1.jpg" alt="blanco puntos" loading="lazy" width="800" height="1000"><span class="stk">S008</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">blanco puntos</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S009" data-search="s009 candy shock">
+<button type="button" class="card-btn" data-open="S009" aria-label="Ver candy, S009">
+<span class="ph"><img src="img/p/S009-1.jpg" alt="candy" loading="lazy" width="800" height="1000"><span class="stk">S009</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">candy</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S010" data-search="s010 cherry shock">
+<button type="button" class="card-btn" data-open="S010" aria-label="Ver cherry, S010">
+<span class="ph"><img src="img/p/S010-1.jpg" alt="cherry" loading="lazy" width="800" height="1000"><span class="stk">S010</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">cherry</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S011" data-search="s011 neon cute shock">
+<button type="button" class="card-btn" data-open="S011" aria-label="Ver neon cute, S011">
+<span class="ph"><img src="img/p/S011-1.jpg" alt="neon cute" loading="lazy" width="800" height="1000"><span class="stk">S011</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">neon cute</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S012" data-search="s012 lazo dorado shock">
+<button type="button" class="card-btn" data-open="S012" aria-label="Ver lazo dorado, S012">
+<span class="ph"><img src="img/p/S012-1.jpg" alt="lazo dorado" loading="lazy" width="800" height="1000"><span class="stk">S012</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">lazo dorado</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S013" data-search="s013 mariposa blanca bebé shock">
+<button type="button" class="card-btn" data-open="S013" aria-label="Ver mariposa blanca bebé, S013">
+<span class="ph"><img src="img/p/S013-1.jpg" alt="mariposa blanca bebé" loading="lazy" width="800" height="1000"><span class="stk">S013</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">mariposa blanca bebé</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S014" data-search="s014 twins rojo shock">
+<button type="button" class="card-btn" data-open="S014" aria-label="Ver twins rojo, S014">
+<span class="ph"><img src="img/p/S014-1.jpg" alt="twins rojo" loading="lazy" width="800" height="1000"><span class="stk">S014</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">twins rojo</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S037" data-search="s037 oxenford shock">
+<button type="button" class="card-btn" data-open="S037" aria-label="Ver oxenford, S037">
+<span class="ph"><img src="img/p/S037-1.jpg" alt="oxenford" loading="lazy" width="800" height="1000"><span class="stk">S037</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">oxenford</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S038" data-search="s038 patty grey shock">
+<button type="button" class="card-btn" data-open="S038" aria-label="Ver patty grey, S038">
+<span class="ph"><img src="img/p/S038-1.jpg" alt="patty grey" loading="lazy" width="800" height="1000"><span class="stk">S038</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">patty grey</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S039" data-search="s039 pez shock">
+<button type="button" class="card-btn" data-open="S039" aria-label="Ver pez, S039">
+<span class="ph"><img src="img/p/S039-1.jpg" alt="pez" loading="lazy" width="800" height="1000"><span class="stk">S039</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">shock</span><span class="nm">pez</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li></ul>
+</section><section id="aretes" class="cat" style="--bg:#6558C0;--fg:#FFFFFF;--sub:#E4E0FF;--stk:#B7F64D;--stkfg:#0B0B0C">
+<header class="cat-head">
+<img class="cat-slime" src="img/brand/slime2.jpg" alt="" loading="lazy">
+<img class="cat-ring" src="img/brand/ring.png" alt="" loading="lazy">
+<div class="cat-txt">
+<span class="cat-n">02</span>
+<h2>ARETES</h2>
+<p>Para orejas que no se quedan calladas.</p>
+<span class="pill">6 piezas</span>
+</div>
+</header>
+<ul class="grid"><li class="card" data-code="S001" data-search="s001 cadena verde aretes">
+<button type="button" class="card-btn" data-open="S001" aria-label="Ver cadena verde, S001">
+<span class="ph"><img src="img/p/S001-1.jpg" alt="cadena verde" loading="lazy" width="800" height="1000"><span class="stk">S001</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">aretes</span><span class="nm">cadena verde</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S002" data-search="s002 estrellita aretes">
+<button type="button" class="card-btn" data-open="S002" aria-label="Ver estrellita, S002">
+<span class="ph"><img src="img/p/S002-1.jpg" alt="estrellita" loading="lazy" width="800" height="1000"><span class="stk">S002</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">aretes</span><span class="nm">estrellita</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S003" data-search="s003 lluvia aretes">
+<button type="button" class="card-btn" data-open="S003" aria-label="Ver lluvia, S003">
+<span class="ph"><img src="img/p/S003-1.jpg" alt="lluvia" loading="lazy" width="800" height="1000"><span class="stk">S003</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">aretes</span><span class="nm">lluvia</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S004" data-search="s004 bola nube aretes">
+<button type="button" class="card-btn" data-open="S004" aria-label="Ver bola nube, S004">
+<span class="ph"><img src="img/p/S004-1.jpg" alt="bola nube" loading="lazy" width="800" height="1000"><span class="stk">S004</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">aretes</span><span class="nm">bola nube</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S005" data-search="s005 uva verde aretes">
+<button type="button" class="card-btn" data-open="S005" aria-label="Ver uva verde, S005">
+<span class="ph"><img src="img/p/S005-1.jpg" alt="uva verde" loading="lazy" width="800" height="1000"><span class="stk">S005</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">aretes</span><span class="nm">uva verde</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S022" data-search="s022 earcuffs (x4) aretes">
+<button type="button" class="card-btn" data-open="S022" aria-label="Ver earcuffs (x4), S022">
+<span class="ph"><img src="img/p/S022-1.jpg" alt="earcuffs (x4)" loading="lazy" width="800" height="1000"><span class="stk">S022</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">aretes</span><span class="nm">earcuffs (x4)</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li></ul>
+</section><section id="collares" class="cat" style="--bg:#0B0B0C;--fg:#FFFFFF;--sub:#C8C8CE;--stk:#B7F64D;--stkfg:#0B0B0C">
+<header class="cat-head">
+<img class="cat-slime" src="img/brand/slime3.jpg" alt="" loading="lazy">
+<img class="cat-ring" src="img/brand/ring.png" alt="" loading="lazy">
+<div class="cat-txt">
+<span class="cat-n">03</span>
+<h2>COLLARES</h2>
+<p>Al cuello, con actitud.</p>
+<span class="pill">7 piezas</span>
+</div>
+</header>
+<ul class="grid"><li class="card" data-code="S018" data-search="s018 pitas círculo colgante collar">
+<button type="button" class="card-btn" data-open="S018" aria-label="Ver pitas círculo colgante, S018">
+<span class="ph"><img src="img/p/S018-1.jpg" alt="pitas círculo colgante" loading="lazy" width="800" height="1000"><span class="stk">S018</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">collar</span><span class="nm">pitas círculo colgante</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S019" data-search="s019 gargantilla corazón blonda collar">
+<button type="button" class="card-btn" data-open="S019" aria-label="Ver gargantilla corazón blonda, S019">
+<span class="ph"><img src="img/p/S019-1.jpg" alt="gargantilla corazón blonda" loading="lazy" width="800" height="1000"><span class="stk">S019</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">collar</span><span class="nm">gargantilla corazón blonda</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S020" data-search="s020 collar doble estrella collar">
+<button type="button" class="card-btn" data-open="S020" aria-label="Ver collar doble estrella, S020">
+<span class="ph"><img src="img/p/S020-1.jpg" alt="collar doble estrella" loading="lazy" width="800" height="1000"><span class="stk">S020</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">collar</span><span class="nm">collar doble estrella</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S021" data-search="s021 merly collar">
+<button type="button" class="card-btn" data-open="S021" aria-label="Ver merly, S021">
+<span class="ph"><img src="img/p/S021-1.jpg" alt="merly" loading="lazy" width="800" height="1000"><span class="stk">S021</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">collar</span><span class="nm">merly</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S024" data-search="s024 gargantilla neón collar">
+<button type="button" class="card-btn" data-open="S024" aria-label="Ver gargantilla neón, S024">
+<span class="ph"><img src="img/p/S024-1.jpg" alt="gargantilla neón" loading="lazy" width="800" height="1000"><span class="stk">S024</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">collar</span><span class="nm">gargantilla neón</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S028" data-search="s028 gargantilla negro dorado collar">
+<button type="button" class="card-btn" data-open="S028" aria-label="Ver gargantilla negro dorado, S028">
+<span class="ph"><img src="img/p/S028-1.jpg" alt="gargantilla negro dorado" loading="lazy" width="800" height="1000"><span class="stk">S028</span><span class="dots"><i></i><i></i></span></span>
+<span class="meta"><span class="lab">collar</span><span class="nm">gargantilla negro dorado</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S033" data-search="s033 lazo neón collar">
+<button type="button" class="card-btn" data-open="S033" aria-label="Ver lazo neón, S033">
+<span class="ph"><img src="img/p/S033-1.jpg" alt="lazo neón" loading="lazy" width="800" height="1000"><span class="stk">S033</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">collar</span><span class="nm">lazo neón</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li></ul>
+</section><section id="pulseras" class="cat" style="--bg:#FFFFFF;--fg:#0B0B0C;--sub:#3D3D45;--stk:#6558C0;--stkfg:#FFFFFF">
+<header class="cat-head">
+<img class="cat-slime" src="img/brand/slime1.jpg" alt="" loading="lazy">
+<img class="cat-ring" src="img/brand/ring.png" alt="" loading="lazy">
+<div class="cat-txt">
+<span class="cat-n">04</span>
+<h2>PULSERAS</h2>
+<p>Muñeca con carácter.</p>
+<span class="pill">3 piezas</span>
+</div>
+</header>
+<ul class="grid"><li class="card" data-code="S034" data-search="s034 shock planeta pulsera">
+<button type="button" class="card-btn" data-open="S034" aria-label="Ver shock planeta, S034">
+<span class="ph"><img src="img/p/S034-1.jpg" alt="shock planeta" loading="lazy" width="800" height="1000"><span class="stk">S034</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">pulsera</span><span class="nm">shock planeta</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S035" data-search="s035 brasil pulsera">
+<button type="button" class="card-btn" data-open="S035" aria-label="Ver brasil, S035">
+<span class="ph"><img src="img/p/S035-1.jpg" alt="brasil" loading="lazy" width="800" height="1000"><span class="stk">S035</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">pulsera</span><span class="nm">brasil</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S036" data-search="s036 rubí pulsera">
+<button type="button" class="card-btn" data-open="S036" aria-label="Ver rubí, S036">
+<span class="ph"><img src="img/p/S036-1.jpg" alt="rubí" loading="lazy" width="800" height="1000"><span class="stk">S036</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">pulsera</span><span class="nm">rubí</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li></ul>
+</section><section id="imperdibles" class="cat" style="--bg:#6558C0;--fg:#FFFFFF;--sub:#E4E0FF;--stk:#B7F64D;--stkfg:#0B0B0C">
+<header class="cat-head">
+<img class="cat-slime" src="img/brand/slime2.jpg" alt="" loading="lazy">
+<img class="cat-ring" src="img/brand/ring.png" alt="" loading="lazy">
+<div class="cat-txt">
+<span class="cat-n">05</span>
+<h2>IMPERDIBLES</h2>
+<p>El imperdible dejó de ser de emergencia.</p>
+<span class="pill">10 piezas</span>
+</div>
+</header>
+<ul class="grid"><li class="card" data-code="S026" data-search="s026 dinosaurio blanco imperdible">
+<button type="button" class="card-btn" data-open="S026" aria-label="Ver dinosaurio blanco, S026">
+<span class="ph"><img src="img/p/S026-1.jpg" alt="dinosaurio blanco" loading="lazy" width="800" height="1000"><span class="stk">S026</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">dinosaurio blanco</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S029" data-search="s029 calavera imperdible">
+<button type="button" class="card-btn" data-open="S029" aria-label="Ver calavera, S029">
+<span class="ph"><img src="img/p/S029-1.jpg" alt="calavera" loading="lazy" width="800" height="1000"><span class="stk">S029</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">calavera</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S030" data-search="s030 morado imperdible">
+<button type="button" class="card-btn" data-open="S030" aria-label="Ver morado, S030">
+<span class="ph"><img src="img/p/S030-1.jpg" alt="morado" loading="lazy" width="800" height="1000"><span class="stk">S030</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">morado</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S031" data-search="s031 naranja imperdible">
+<button type="button" class="card-btn" data-open="S031" aria-label="Ver naranja, S031">
+<span class="ph"><img src="img/p/S031-1.jpg" alt="naranja" loading="lazy" width="800" height="1000"><span class="stk">S031</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">naranja</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S032" data-search="s032 pinky pie imperdible">
+<button type="button" class="card-btn" data-open="S032" aria-label="Ver pinky pie, S032">
+<span class="ph"><img src="img/p/S032-1.jpg" alt="pinky pie" loading="lazy" width="800" height="1000"><span class="stk">S032</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">pinky pie</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S040" data-search="s040 ghibli imperdible">
+<button type="button" class="card-btn" data-open="S040" aria-label="Ver ghibli, S040">
+<span class="ph"><img src="img/p/S040-1.jpg" alt="ghibli" loading="lazy" width="800" height="1000"><span class="stk">S040</span><span class="dots"><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">ghibli</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S041" data-search="s041 musical imperdible">
+<button type="button" class="card-btn" data-open="S041" aria-label="Ver musical, S041">
+<span class="ph"><img src="img/p/S041-1.jpg" alt="musical" loading="lazy" width="800" height="1000"><span class="stk">S041</span><span class="dots"><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">musical</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S042" data-search="s042 blanco space imperdible">
+<button type="button" class="card-btn" data-open="S042" aria-label="Ver blanco space, S042">
+<span class="ph"><img src="img/p/S042-1.jpg" alt="blanco space" loading="lazy" width="800" height="1000"><span class="stk">S042</span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">blanco space</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S043" data-search="s043 dorado elegante imperdible">
+<button type="button" class="card-btn" data-open="S043" aria-label="Ver dorado elegante, S043">
+<span class="ph"><img src="img/p/S043-1.jpg" alt="dorado elegante" loading="lazy" width="800" height="1000"><span class="stk">S043</span><span class="dots"><i></i><i></i></span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">dorado elegante</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S044" data-search="s044 rosadito imperdible">
+<button type="button" class="card-btn" data-open="S044" aria-label="Ver rosadito, S044">
+<span class="ph"><img src="img/p/S044-1.jpg" alt="rosadito" loading="lazy" width="800" height="1000"><span class="stk">S044</span></span>
+<span class="meta"><span class="lab">imperdible</span><span class="nm">rosadito</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li></ul>
+</section><section id="accesorios" class="cat" style="--bg:#B7F64D;--fg:#0B0B0C;--sub:#2A3510;--stk:#0B0B0C;--stkfg:#B7F64D">
+<header class="cat-head">
+<img class="cat-slime" src="img/brand/slime3.jpg" alt="" loading="lazy">
+<img class="cat-ring" src="img/brand/ring.png" alt="" loading="lazy">
+<div class="cat-txt">
+<span class="cat-n">06</span>
+<h2>ACCESORIOS</h2>
+<p>Cadenas y piezas para mezclar, probar y cambiar.</p>
+<span class="pill">8 piezas</span>
+</div>
+</header>
+<ul class="grid"><li class="card" data-code="S006" data-search="s006 bigote accesorio">
+<button type="button" class="card-btn" data-open="S006" aria-label="Ver bigote, S006">
+<span class="ph"><img src="img/p/S006-1.jpg" alt="bigote" loading="lazy" width="800" height="1000"><span class="stk">S006</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">bigote</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S007" data-search="s007 rocker accesorio">
+<button type="button" class="card-btn" data-open="S007" aria-label="Ver rocker, S007">
+<span class="ph"><img src="img/p/S007-1.jpg" alt="rocker" loading="lazy" width="800" height="1000"><span class="stk">S007</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">rocker</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S015" data-search="s015 cadena putita accesorio">
+<button type="button" class="card-btn" data-open="S015" aria-label="Ver cadena putita, S015">
+<span class="ph"><img src="img/p/S015-1.jpg" alt="cadena putita" loading="lazy" width="800" height="1000"><span class="stk">S015</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">cadena putita</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S016" data-search="s016 cadena verde dorado accesorio">
+<button type="button" class="card-btn" data-open="S016" aria-label="Ver cadena verde dorado, S016">
+<span class="ph"><img src="img/p/S016-1.jpg" alt="cadena verde dorado" loading="lazy" width="800" height="1000"><span class="stk">S016</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">cadena verde dorado</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S017" data-search="s017 lazo celeste accesorio">
+<button type="button" class="card-btn" data-open="S017" aria-label="Ver lazo celeste, S017">
+<span class="ph"><img src="img/p/S017-1.jpg" alt="lazo celeste" loading="lazy" width="800" height="1000"><span class="stk">S017</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">lazo celeste</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S023" data-search="s023 flower power accesorio">
+<button type="button" class="card-btn" data-open="S023" aria-label="Ver flower power, S023">
+<span class="ph"><img src="img/p/S023-1.jpg" alt="flower power" loading="lazy" width="800" height="1000"><span class="stk">S023</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">flower power</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S025" data-search="s025 gargantilla renacentista accesorio">
+<button type="button" class="card-btn" data-open="S025" aria-label="Ver gargantilla renacentista, S025">
+<span class="ph"><img src="img/p/S025-1.jpg" alt="gargantilla renacentista" loading="lazy" width="800" height="1000"><span class="stk">S025</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">gargantilla renacentista</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li><li class="card" data-code="S027" data-search="s027 cadena múltiple verde accesorio">
+<button type="button" class="card-btn" data-open="S027" aria-label="Ver cadena múltiple verde, S027">
+<span class="ph"><img src="img/p/S027-1.jpg" alt="cadena múltiple verde" loading="lazy" width="800" height="1000"><span class="stk">S027</span><span class="dots"><i></i><i></i><i></i></span></span>
+<span class="meta"><span class="lab">accesorio</span><span class="nm">cadena múltiple verde</span><span class="pr"><b>S/ —</b> pendiente por definir</span></span>
+</button>
+</li></ul>
+</section>
+<div class="empty" id="empty">No encontramos esa pieza. Prueba con el código (ej. S021).</div>
+</main>
+
+<footer>
+<div class="wrap">
+<h3>El cambio no me complica, <mark>me inspira.</mark></h3>
+<p>Pedidos y consultas por DM.<br>Dinos el código de tu pieza.</p>
+<a class="ig" id="ig" href="#" target="_blank" rel="noopener">@instagram</a>
+<img class="foot-logo" src="img/brand/shock-white.png" alt="SHOCK" loading="lazy">
+<div class="small">CATÁLOGO OFICIAL · VOL. 01 · HECHO A MANO · DISEÑO LOCAL</div>
+</div>
+</footer>
+
+<dialog id="m" aria-label="Detalle de pieza">
+<button class="m-close" id="mx" type="button" aria-label="Cerrar"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 4l12 12M16 4L4 16"/></svg></button>
+<div class="m-imgs" id="mi"></div>
+<div class="m-dots" id="md"></div>
+<div class="m-body">
+<span class="m-code" id="mc"></span>
+<span class="m-cat" id="mk"></span>
+<h4 id="mn"></h4>
+<span class="m-pr"><b>S/ —</b>pendiente por definir</span>
+<div class="m-act">
+<a class="m-dm" id="mdm" href="#" target="_blank" rel="noopener">Pedir por DM</a>
+<button class="m-copy" id="mcp" type="button">Copiar código</button>
+</div>
+<span class="m-note" id="mnote"></span>
+</div>
+</dialog>
+
+<script>
+// ▼▼ EDITA AQUÍ: usuario de Instagram de la tienda (sin @) ▼▼
+const INSTAGRAM = "";
+// ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+const DATA = {"S008": {"name": "blanco puntos", "cat": "shock", "photos": ["S008-1.jpg", "S008-2.jpg", "S008-3.jpg"]}, "S009": {"name": "candy", "cat": "shock", "photos": ["S009-1.jpg", "S009-2.jpg", "S009-3.jpg"]}, "S010": {"name": "cherry", "cat": "shock", "photos": ["S010-1.jpg", "S010-2.jpg", "S010-3.jpg"]}, "S011": {"name": "neon cute", "cat": "shock", "photos": ["S011-1.jpg", "S011-2.jpg", "S011-3.jpg"]}, "S012": {"name": "lazo dorado", "cat": "shock", "photos": ["S012-1.jpg", "S012-2.jpg", "S012-3.jpg"]}, "S013": {"name": "mariposa blanca bebé", "cat": "shock", "photos": ["S013-1.jpg", "S013-2.jpg", "S013-3.jpg"]}, "S014": {"name": "twins rojo", "cat": "shock", "photos": ["S014-1.jpg", "S014-2.jpg", "S014-3.jpg"]}, "S037": {"name": "oxenford", "cat": "shock", "photos": ["S037-1.jpg", "S037-2.jpg", "S037-3.jpg"]}, "S038": {"name": "patty grey", "cat": "shock", "photos": ["S038-1.jpg", "S038-2.jpg", "S038-3.jpg"]}, "S039": {"name": "pez", "cat": "shock", "photos": ["S039-1.jpg", "S039-2.jpg", "S039-3.jpg"]}, "S001": {"name": "cadena verde", "cat": "aretes", "photos": ["S001-1.jpg", "S001-2.jpg", "S001-3.jpg"]}, "S002": {"name": "estrellita", "cat": "aretes", "photos": ["S002-1.jpg", "S002-2.jpg", "S002-3.jpg"]}, "S003": {"name": "lluvia", "cat": "aretes", "photos": ["S003-1.jpg", "S003-2.jpg", "S003-3.jpg"]}, "S004": {"name": "bola nube", "cat": "aretes", "photos": ["S004-1.jpg", "S004-2.jpg", "S004-3.jpg"]}, "S005": {"name": "uva verde", "cat": "aretes", "photos": ["S005-1.jpg", "S005-2.jpg", "S005-3.jpg"]}, "S022": {"name": "earcuffs (x4)", "cat": "aretes", "photos": ["S022-1.jpg", "S022-2.jpg", "S022-3.jpg"]}, "S018": {"name": "pitas círculo colgante", "cat": "collar", "photos": ["S018-1.jpg", "S018-2.jpg", "S018-3.jpg"]}, "S019": {"name": "gargantilla corazón blonda", "cat": "collar", "photos": ["S019-1.jpg", "S019-2.jpg", "S019-3.jpg"]}, "S020": {"name": "collar doble estrella", "cat": "collar", "photos": ["S020-1.jpg", "S020-2.jpg", "S020-3.jpg"]}, "S021": {"name": "merly", "cat": "collar", "photos": ["S021-1.jpg", "S021-2.jpg", "S021-3.jpg"]}, "S024": {"name": "gargantilla neón", "cat": "collar", "photos": ["S024-1.jpg", "S024-2.jpg", "S024-3.jpg"]}, "S028": {"name": "gargantilla negro dorado", "cat": "collar", "photos": ["S028-1.jpg", "S028-2.jpg"]}, "S033": {"name": "lazo neón", "cat": "collar", "photos": ["S033-1.jpg", "S033-2.jpg", "S033-3.jpg"]}, "S034": {"name": "shock planeta", "cat": "pulsera", "photos": ["S034-1.jpg", "S034-2.jpg", "S034-3.jpg"]}, "S035": {"name": "brasil", "cat": "pulsera", "photos": ["S035-1.jpg", "S035-2.jpg", "S035-3.jpg"]}, "S036": {"name": "rubí", "cat": "pulsera", "photos": ["S036-1.jpg", "S036-2.jpg", "S036-3.jpg"]}, "S026": {"name": "dinosaurio blanco", "cat": "imperdible", "photos": ["S026-1.jpg", "S026-2.jpg", "S026-3.jpg"]}, "S029": {"name": "calavera", "cat": "imperdible", "photos": ["S029-1.jpg", "S029-2.jpg", "S029-3.jpg"]}, "S030": {"name": "morado", "cat": "imperdible", "photos": ["S030-1.jpg", "S030-2.jpg", "S030-3.jpg"]}, "S031": {"name": "naranja", "cat": "imperdible", "photos": ["S031-1.jpg", "S031-2.jpg", "S031-3.jpg"]}, "S032": {"name": "pinky pie", "cat": "imperdible", "photos": ["S032-1.jpg", "S032-2.jpg", "S032-3.jpg"]}, "S040": {"name": "ghibli", "cat": "imperdible", "photos": ["S040-1.jpg", "S040-2.jpg"]}, "S041": {"name": "musical", "cat": "imperdible", "photos": ["S041-1.jpg", "S041-2.jpg"]}, "S042": {"name": "blanco space", "cat": "imperdible", "photos": ["S042-1.jpg"]}, "S043": {"name": "dorado elegante", "cat": "imperdible", "photos": ["S043-1.jpg", "S043-2.jpg"]}, "S044": {"name": "rosadito", "cat": "imperdible", "photos": ["S044-1.jpg"]}, "S006": {"name": "bigote", "cat": "accesorio", "photos": ["S006-1.jpg", "S006-2.jpg", "S006-3.jpg"]}, "S007": {"name": "rocker", "cat": "accesorio", "photos": ["S007-1.jpg", "S007-2.jpg", "S007-3.jpg"]}, "S015": {"name": "cadena putita", "cat": "accesorio", "photos": ["S015-1.jpg", "S015-2.jpg", "S015-3.jpg"]}, "S016": {"name": "cadena verde dorado", "cat": "accesorio", "photos": ["S016-1.jpg", "S016-2.jpg", "S016-3.jpg"]}, "S017": {"name": "lazo celeste", "cat": "accesorio", "photos": ["S017-1.jpg", "S017-2.jpg", "S017-3.jpg"]}, "S023": {"name": "flower power", "cat": "accesorio", "photos": ["S023-1.jpg", "S023-2.jpg", "S023-3.jpg"]}, "S025": {"name": "gargantilla renacentista", "cat": "accesorio", "photos": ["S025-1.jpg", "S025-2.jpg", "S025-3.jpg"]}, "S027": {"name": "cadena múltiple verde", "cat": "accesorio", "photos": ["S027-1.jpg", "S027-2.jpg", "S027-3.jpg"]}};
+const igUrl = INSTAGRAM ? "https://ig.me/m/" + INSTAGRAM : "";
+const igLink = document.getElementById("ig");
+if (INSTAGRAM) { igLink.href = "https://instagram.com/" + INSTAGRAM; igLink.textContent = "@" + INSTAGRAM; }
+else { igLink.style.display = "none"; }
+
+const m = document.getElementById("m"), mi = document.getElementById("mi"), md = document.getElementById("md");
+function openItem(code) {
+  const d = DATA[code]; if (!d) return;
+  mi.replaceChildren(...d.photos.map(p => { const i = document.createElement("img"); i.src = "img/p/" + p; i.alt = d.name; return i; }));
+  md.replaceChildren(...d.photos.map((_, k) => { const i = document.createElement("i"); if (!k) i.className = "on"; return i; }));
+  md.style.display = d.photos.length > 1 ? "flex" : "none";
+  document.getElementById("mc").textContent = code;
+  document.getElementById("mk").textContent = d.cat;
+  document.getElementById("mn").textContent = d.name;
+  const dm = document.getElementById("mdm");
+  if (igUrl) { dm.href = igUrl; dm.style.display = ""; } else dm.style.display = "none";
+  document.getElementById("mnote").textContent = igUrl ? "Pega el código en el DM para pedirla." : "Pídela por DM con el código " + code + ".";
+  mi.scrollLeft = 0;
+  m.showModal();
+  history.replaceState(null, "", "#" + code);
+}
+mi.addEventListener("scroll", () => {
+  const k = Math.round(mi.scrollLeft / mi.clientWidth);
+  [...md.children].forEach((d, j) => d.classList.toggle("on", j === k));
+});
+document.querySelectorAll("[data-open]").forEach(b => b.addEventListener("click", () => openItem(b.dataset.open)));
+document.getElementById("mx").onclick = () => m.close();
+m.addEventListener("click", e => { if (e.target === m) m.close(); });
+m.addEventListener("close", () => history.replaceState(null, "", location.pathname));
+document.getElementById("mcp").onclick = async (e) => {
+  const code = document.getElementById("mc").textContent;
+  try { await navigator.clipboard.writeText(code); e.target.textContent = "¡Copiado!"; } catch (_) { e.target.textContent = code; }
+  setTimeout(() => e.target.textContent = "Copiar código", 1600);
+};
+// deep link: .../#S012 opens that piece
+const h = location.hash.slice(1).toUpperCase();
+if (DATA[h]) setTimeout(() => { document.querySelector('[data-code="' + h + '"]').scrollIntoView(); openItem(h); }, 300);
+
+// search
+const q = document.getElementById("q"), empty = document.getElementById("empty");
+q.addEventListener("input", () => {
+  const v = q.value.trim().toLowerCase(); let any = false;
+  document.querySelectorAll(".cat").forEach(sec => {
+    let n = 0;
+    sec.querySelectorAll(".card").forEach(c => { const ok = !v || c.dataset.search.includes(v); c.hidden = !ok; if (ok) n++; });
+    sec.hidden = n === 0; if (n) any = true;
+  });
+  empty.style.display = any ? "none" : "block";
+});
+
+// active category chip
+const links = document.querySelectorAll("nav.cats a");
+const io = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting) links.forEach(a => { a.classList.toggle("on", a.dataset.nav === en.target.id); if (a.dataset.nav === en.target.id) a.parentNode.scrollTo({left: a.offsetLeft - 16, behavior: "smooth"}); });
+}), { rootMargin: "-45% 0px -50% 0px" });
+document.querySelectorAll(".cat").forEach(s => io.observe(s));
+</script>
+</body>
+</html>
